@@ -3,13 +3,16 @@ Created on 27/10/2013
 
 @author: rootmaster
 '''
+
+
 def printplus20():
     file = open("words.txt", "r")
     for linea in file:
         if len(linea) > 19:
-            print linea
-    
+            print(linea)
+
     file.close()
+
 
 def verifye(word):
     val = 0
@@ -17,11 +20,13 @@ def verifye(word):
     for letra in words:
         if letra == 'e':
             val += 1
-            
+
     if val > 0:
         return True
+
     else:
         return False
+
 
 def printewords():
     file = open("words.txt", "r")
@@ -31,13 +36,15 @@ def printewords():
         cal += 1
         if 'e' in linea:
             calfile += 1
-            print linea
-    
+            print(linea)
+
     valor = calfile/cal
-    
-    print cal
-    print calfile
-    print valor * 100
+
+    print(cal)
+    print(calfile)
+    print(valor * 100)
     file.close()
 
-printewords()
+printplus20()
+
+# printewords()

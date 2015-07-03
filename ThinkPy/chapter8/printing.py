@@ -8,7 +8,6 @@ suffix = 'ack'
 
 for letter in prefixes:
     if letter == "O" or letter == "Q":
-        print letter + "u" + suffix
+        print(letter + "u" + suffix)
     else:
-        print letter + suffix
-        
+        print(letter + suffix)
